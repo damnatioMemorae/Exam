@@ -1,4 +1,5 @@
-1. Find the sum of the digits of three-digit natural numbers.
+```php
+//1. Find the sum of the digits of three-digit natural numbers.
 
 <?php
 $number = 345; // any three-digit number
@@ -12,7 +13,7 @@ $sum = $hundreds + $tens + $units;
 echo "Sum of digits: " . $sum;
 ?>
 
-2.Find the first and last digits of the number.
+//2.Find the first and last digits of the number.
 
 <?php
 $number = 345;
@@ -30,7 +31,7 @@ echo "First digit: $first\n";
 echo "Last digit: $last\n";
 ?>
 
-3. Find the second digit of the integer.
+//3. Find the second digit of the integer.
 
 <?php
 $number = 345;
@@ -41,7 +42,7 @@ $second = intdiv($number % 100, 10);
 echo "Second digit: $second";
 ?>
 
-4. Find the sum of the digit of the number.
+//4. Find the sum of the digit of the number.
 
 <?php
 $number = 345;
@@ -55,7 +56,7 @@ while ($number > 0) {
 echo "Sum of digits: $sum";
 ?>
 
-5. Given an array consisting of n integers, find the count of distinct elements in the array.
+//5. Given an array consisting of n integers, find the count of distinct elements in the array.
 
 <?php
 $array = [1, 2, 2, 3, 4, 4, 5];
@@ -66,7 +67,7 @@ $count = count($unique);
 echo "Count of distinct elements: $count";
 ?>
 
-6. $string = "dffgdhfsdafsfdsgdgh" Write a function that takes a given length and creates a random string of that length, then converts each character into an array
+//6. $string = "dffgdhfsdafsfdsgdgh" Write a function that takes a given length and creates a random string of that length, then converts each character into an array
 
 <?php
 function randomStringToArray($length) {
@@ -88,7 +89,7 @@ $result = randomStringToArray(10);
 print_r($result);
 ?>
 
-7. Shift the elements in the given array one step to the left ($a = [1,2,3];).
+//7. Shift the elements in the given array one step to the left ($a = [1,2,3];).
 
 <?php
 $a = [1, 2, 3];
@@ -99,7 +100,7 @@ $a[] = $first;            // add it to the end
 print_r($a);
 ?>
 
-8. Shift the elements in the given array one step to the right ($a = [1,2,3];)
+//8. Shift the elements in the given array one step to the right ($a = [1,2,3];)
 
 <?php
 $a = [1, 2, 3];
@@ -110,7 +111,7 @@ array_unshift($a, $last); // add it to the beginning
 print_r($a);
 ?>
 
-9. Find the maximum element and its count in the array.
+//9. Find the maximum element and its count in the array.
 
 <?php
 $a = [1, 3, 5, 5, 2, 5, 3];
@@ -128,7 +129,7 @@ echo "Maximum element: $max\n";
 echo "Count: $count";
 ?>
 
-10. Find the unique elements." ($a = [2,3,1,4,5]; $b = [2,1,6,7,8] )
+//10. Find the unique elements." ($a = [2,3,1,4,5]; $b = [2,1,6,7,8] )
 
 <?php
 $a = [2, 3, 1, 4, 5];
@@ -146,7 +147,7 @@ $result = array_merge($uniqueA, $uniqueB);
 print_r($result);
 ?>
 
-11. Write a function that counts the number of words in the given string
+//11. Write a function that counts the number of words in the given string
 
 <?php
 function countWords($string) {
@@ -168,7 +169,7 @@ $text = "This is an example string.";
 echo "Number of words: " . countWords($text);
 ?>
 
-12. Find the index of the first and last whitespace characters in the given string
+//12. Find the index of the first and last whitespace characters in the given string
 
 <?php
 $string = "Hello world, how are you?";
@@ -183,7 +184,7 @@ echo "First whitespace index: $firstSpace\n";
 echo "Last whitespace index: $lastSpace\n";
 ?>
 
-13. $a = 31233493; $b = 3; output: 4
+//13. $a = 31233493; $b = 3; output: 4
 
 <?php
 $a = 31233493;
@@ -198,7 +199,7 @@ $count = substr_count($str, (string)$b);
 echo $count; // Output: 4
 ?>
 
-14. If there are at least two same digits in the given number, return 'yes'. Otherwise, return 'no'.
+//14. If there are at least two same digits in the given number, return 'yes'. Otherwise, return 'no'.
 
 <?php
 function hasDuplicateDigits($number) {
@@ -222,7 +223,7 @@ $number2 = 12345;
 echo hasDuplicateDigits($number2); // Output: no
 ?>
 
-15. Write an HTML Form with checkboxes, and in PHP, print the selected value or values to the screen.
+//15. Write an HTML Form with checkboxes, and in PHP, print the selected value or values to the screen.
 
 <!-- save as form.php -->
 <!DOCTYPE html>
@@ -254,7 +255,7 @@ if (isset($_POST['submit'])) {
 </body>
 </html>
 
-16. Write an HTML Form with select, and in PHP, print the selected value or values to the screen
+//16. Write an HTML Form with select, and in PHP, print the selected value or values to the screen
 
 <!-- save as select_form.php -->
 <!DOCTYPE html>
@@ -289,7 +290,7 @@ if (isset($_POST['submit'])) {
 </body>
 </html>
 
-17. Write about is_file(), file_exists(), touch() functions with code examples.
+//17. Write about is_file(), file_exists(), touch() functions with code examples.
 
 <?php
 $filename = "example.txt";
@@ -301,7 +302,7 @@ if (file_exists($filename)) {
 }
 ?>
 
-18. Write about fopen(), fwrite(), fclose() functions with code examples.
+//18. Write about fopen(), fwrite(), fclose() functions with code examples.
 
 <?php
 $filename = "example.txt";
@@ -316,7 +317,7 @@ if ($file) {
 }
 ?>
 
-19. Write about mkdir(), rmdir(), glob() functions with code examples.
+//19. Write about mkdir(), rmdir(), glob() functions with code examples.
 
 
 <?php
@@ -333,3 +334,4 @@ if (mkdir($dir)) {
 $nestedDir = "parent/child";
 mkdir($nestedDir, 0777, true); // true allows recursive creation
 ?>
+```
